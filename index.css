@@ -1,0 +1,140 @@
+/* 1. Reset Basico */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+     
+}
+
+/* 2. Base da Página (Body) */
+body {
+   font-family: 'Arial Narrow', Arial, sans-serif;
+   color: #333; /* É o mesmo que #333333 */
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   background-color: #ffffff; /*  = #fff */
+}
+/* 3. Imagens de Fundo: 50% esquerda 50% Direita */
+.fundo {
+   position: fixed;
+   width: 50%;
+   height: 100%;
+   z-index: -1;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.fundo-esquerda {
+   left: 0;
+   background-image: url('./img/criancas.png');
+}
+
+.fundo-direita {
+   right: 0;
+   background-image: url('./img/menina.png');
+}
+
+/* 4. Painel central Translucido */
+main {
+   width: 500px;
+   max-width: 100%;
+   min-height: 100vh;
+
+   /* Flexbox */
+
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(255, 255, 255, 0.88);
+}
+
+/* 5. Textos e Logo*/
+main h1 {
+   font-size: 17.5px;
+   font-weight: normal;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.logo {
+   display: block;
+   width: 320px;
+   max-width: 100%;
+   height: auto;
+   margin: 4px auto 36px;
+   background-color: rgba(255, 255, 255, 0.88);
+}
+
+main h2 {
+   font-size: 17.5px;
+   font-weight: normal;  /* Alteração na largura */
+   text-transform: uppercase;
+   
+   /* Config. p/ deixa na mesma largura da Logo */
+   margin-left: auto;
+   margin-right: auto;
+
+   margin-bottom: 30px;
+}
+
+/* 6. formularios */
+input[type="text"],
+input[type="password"]{
+   display: block;
+  
+   /* Alteração na largura */
+   width: 320px;
+   margin-bottom: 40px;
+   padding: 14px 12px;
+   font-size: 14px;
+   color: #333333; /* #333 */
+
+   background-color: rgba(255, 255, 255, 0.88);
+   border: solid #c8c8c8 1px;
+   
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+   outline: none;
+   border-color: #77B3E2;
+}
+
+button {
+   display: block;
+   padding: 12px 22px;
+   margin:0 auto;
+   margin-bottom: 30px;
+   font-size: 14px;
+   font-weight: bold;
+   font-style: italic;
+   text-transform: uppercase;
+   color: #ffffff; 
+   background-color: #ff0000;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+button:hover {
+   background-color: #626262;
+}
+
+.links {
+   margin-bottom: 20px;
+   text-align: center;
+   color: #333333;
+}
+a {
+   color: #ff0000;
+}
+
+a:hover {
+   color: #626262;
+}
